@@ -1,0 +1,37 @@
+{
+	"id": "f11d3177-977f-f924-e922-846807ee1336",
+	"name": "workshop-ms-01",
+	"description": "",
+	"order": [
+		"25e98c8e-6210-43be-cd47-4daa5aa61f19"
+	],
+	"folders": [],
+	"timestamp": 1498382436800,
+	"owner": "2240689",
+	"public": false,
+	"requests": [
+		{
+			"id": "25e98c8e-6210-43be-cd47-4daa5aa61f19",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/search/somkiat",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f11d3177-977f-f924-e922-846807ee1336",
+			"data": null,
+			"dataMode": "params",
+			"name": "localhost:8080/search/somkiat",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1498382436799,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData[0].displayname === \"Somkiat Pui\";",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
